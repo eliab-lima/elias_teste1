@@ -1,3 +1,9 @@
-let nas = Number (prompt("Digite seu ano de nascimento:"));
-let idade = 2026 - nasc;
-alert(`Sua idade é ${idade}`);
+let num = Number(prompt("Digite um número: "));
+
+if (num % 2 != 0){
+    alert(`${num} é impar `);
+} else if(num ==0){
+    alert("é zero");
+}else{
+    alert(`${num} é par`);
+}
