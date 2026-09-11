@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 06: Estruturas de controle</title>
+    <title>Aula 08: Intração JS e HTML</title>
 </head>
 <body>
-    <h1>Olá, meu nome é Eli</h1>
-    <h2>Esta é minha primeira aula de designer web</h2>
-    <h3>data: 21/08/2026</h3> 
-    <script src="./js/app.js" defer></script>
+    <h3>Data: 11/09/2026</h3> 
+    <table border="1">
+        <tr>
+            <td>
+                <button id="ant">Anterior</button>
+                <button id="prox">Próximo</button>
+            </td>
+            <td rowspan ="4"> 
+                <img id = "foto" src="./img/foto1.jpg" width="350px"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select id="combobox">
+                    <option value="1">Mel</option>
+                    <option value="2">Balu</option>
+                    <option value="3">Zoey</option>
+                    <option value="4">Aia</option>
+                    <option value="5">Pitomba</option>
+                    <option value="6">Bombo</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li id="li1">Mel</li>
+                    <li id="li2">Balu</li>
+                    <li id="li3">Zoey</li>
+                    <li id="li4">Aia</li>
+                    <li id="li5">Pitomba</li>
+                    <li id="li6">Bombom</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="range" id="opacidade" min="0"  max="1" step="0.1" value="1">
+            </td>
+        </tr>
+    </table>
+    <script src="./js/app1.js" defer></script>
 
 </body>
 </html>
