@@ -1,12 +1,29 @@
-var nasc = 2009;
-let nome = "Elias";
-const viva = true;
-
-function calcIdade(ano=2026){
-    let idade = ano - nasc;
-    alert (`Dentro de Função - Idade ${idade}`);
-    return idade;
+class Animal{
+    constructor (n, c="desconhecido", a=0.0, p=0, r="vira-lata"){
+        this.nome = n;
+        this.cor = c;
+        this.altura = a;
+        this.peso = p;
+        this.raca = r;
+        }
+    falar(){
+        alert("oi");
+    }
+    comer(kg) {
+        this.peso = this.peso + kg;
+        alert("Comi");
+    }
+    cagar(kg){
+        this.peso = this.peso - kg;
+        alert("Caguei");
+    }
+    saudar(){
+        let msg = `Olá meu nome é ${this.nome}\n`;
+        msg = msg+ `Cor: ${this.cor} Raça:${this.raca}\n`
+        msg = msg+ `Peso: ${this.peso}\n`
+        msg = msg+ `Altura: ${this.altura}\n`
+        alert(msg)
+    }
 }
-
-calcIdade();
-alert (`Fora da Funcao : chamado calcIdade ${calcIdade(2027)}`);
+const balu = new Animal("Balu Brasil");
+const mel = new Animal("Mel", "Amerelo", 1.10, 45, "Labrador")
